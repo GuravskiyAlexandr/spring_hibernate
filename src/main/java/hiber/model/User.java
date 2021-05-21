@@ -19,7 +19,7 @@ public class User {
    @Column(name = "email")
    private String email;
 
-   @OneToOne(mappedBy = "user", fetch = FetchType.EAGER)
+   @OneToOne( fetch = FetchType.EAGER)
    private Car car;
 
    public User() {}

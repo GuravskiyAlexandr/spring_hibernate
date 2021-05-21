@@ -18,10 +18,6 @@ public class Car {
     @Column(name = "model")
     private String model;
 
-    @OneToOne
-    @JoinColumn(name = "user_id")
-    private User user;
-
     public Car() {
     }
 
@@ -54,13 +50,7 @@ public class Car {
         this.model = firstName;
     }
 
-    public User getUser() {
-        return user;
-    }
 
-    public void setUser(User user) {
-        this.user = user;
-    }
 
     @Override
     public boolean equals(Object o) {
